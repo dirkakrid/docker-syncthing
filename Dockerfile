@@ -14,8 +14,8 @@ RUN 	apk add --no-cache $PACKAGE && \
 	echo "$TZ" > /etc/timezone \
 	deluser $USER \
 	delgroup $GROUP \
-	addgroup $GROUP 2>/dev/null \
-	adduser -D -H -h $HOME -s /sbin/nologin -G $GROUP -g ' ' $USER 2>/dev/null
+	addgroup -g $GID $GROUP 2>/dev/null \
+	adduser -D -H -h $HOME -s /sbin/nologin -G $GROUP -g ' ' -u $UID $USER 2>/dev/null
 
 
 USER $USER
