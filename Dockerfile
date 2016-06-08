@@ -5,7 +5,7 @@ ENV 	PACKAGE="syncthing tzdata" \
 	UID="1000" \
 	GROUP="syncthing" \
 	GID="1000" \
-	HOME="/var/lib/$USER" \
+	HOME="/var/lib/syncthing" \
 	TZ="Australia/Sydney"
 
 # Install package using --no-cache to update index and remove unwanted files
