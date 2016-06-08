@@ -30,7 +30,7 @@ run:
 		echo "Creating and starting container..."; \
 		docker run -d \
  		--restart=always \
- 		-p 8384:8080 -p 22000:22000 -p 21025:21025/udp \
+ 		-p 8384:8384 -p 22000:22000 -p 21025:21025/udp \
 		-v $(CONFIG_BIND)$(CONFIG_VOL) \
  		-v $(DATA_BIND_1)$(DATA_VOL_1) \
  		--name $(CONTAINER_RUN) \
