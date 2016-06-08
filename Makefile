@@ -14,7 +14,7 @@ CONFIG_VOL = /var/lib/syncthing
 CONFIG_BIND = /srv/syncthing/config:
 
 # URL for triggering a rebuild
-TRIGGER_URL = 
+TRIGGER_URL = https://registry.hub.docker.com/u/hobbsau/syncthing/trigger/e8dbbdb4-d619-4374-bf5f-10fe077dfed7/
 
 # Trigger a remote initiated rebuild
 build:
